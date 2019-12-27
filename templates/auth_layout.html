@@ -1,11 +1,7 @@
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Question Time</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
+    {% extends "base.html" %}
+    {% block style %}
+    
         <style>
             html, body {
                 height: 100%;
@@ -31,12 +27,13 @@
                 margin-top: 100px;
             }
         </style>
-    
-    </head>
-    <body>
+    {% endblock %}
+    {% block content %}
+       
+    <div class="outer-area">
         <div class="auth-box text-center">
-            {% block content %}
+            {% block auth %}
             {% endblock %}
         </div>
-    </body>
-</html>
+    </div>
+    {% endblock %} 
